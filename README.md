@@ -5,10 +5,11 @@
 
 A simple Object Oriented wrapper for GeoNames API, written with PHP.
 
+> This project is a work in progress. Please do not use in production.
+
 ## Requirements
 - PHP >= 7.1
-- A [HTTP client](https://packagist.org/providers/php-http/client-implementation)
-- A [PSR-7 implementation](https://packagist.org/providers/psr/http-message-implementation)
+- GeoNames Account
 - (optional) PHPUnit to run tests.
 
 ## Installation
@@ -23,7 +24,7 @@ composer require grayloon/geonames
 An overview of available API parameters for each endpoint is [available here](http://www.geonames.org/export/ws-overview.html).
 
 ``` php
-    $geonames = new Geonames('your_username');
+    $geonames = new \Grayloon\Geonames('your_username');
 
     $result = $geonames->postalCodeSearch([
         'country' => 'US',
