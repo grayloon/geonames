@@ -5,7 +5,7 @@
 
 A simple Object Oriented wrapper for GeoNames API, written with PHP.
 
-> This project is a work in progress. Please do not use in production.
+> This project is a work in progress.
 
 ## Requirements
 - PHP >= 7.1
